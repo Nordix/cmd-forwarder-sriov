@@ -1,6 +1,6 @@
 name: Env Check Test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [on_push, workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   external-job:
     uses: Nordix/nsm-github/.github/workflows/env-check.yml@arp-env-checker
