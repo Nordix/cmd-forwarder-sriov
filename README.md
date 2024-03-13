@@ -19,7 +19,7 @@ Also it works as a device plugin server providing resources for the client pods.
 `cmd-forwarder-sriov` accept following environment variables:
 
 * `NSM_NAME` - A string value of forwarder network service endpoint name (default `sriov-forwarder`)
-* `NSM_NS_NAME` - A string value of forwarder network service name (default `sriovns`)
+* `NSM_NSNAME` - A string value of forwarder network service name (default `sriovns`)
 * `NSM_CONNECT_TO` - A Network Service Manager connectTo URL (default `unix:///var/lib/networkservicemesh/nsm.io.sock`)
 * `NSM_MAX_TOKEN_LIFETIME` - A token lifetime duration (default `24h`)
 * `NSM_RESOURCE_POLL_TIMEOUT` - A timeout to poll device plugin resources usage from kubelet API (default `30s`)
@@ -130,5 +130,3 @@ Because cmd-forwarder-sriov is only anticipated to run in Linux, you will need t
 ```go
 GOOS=linux golangci-lint run
 ```
-A
-A
