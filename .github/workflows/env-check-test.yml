@@ -3,4 +3,4 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push, workflow_dispatch]
 jobs:
   external-job:
-    uses: Nordix/nsm-github/.github/workflows/env-check.yml@arp-env-checker
+    uses: Nordix/nsm-github/.github/workflows/env-check.yaml@arp-env-checker
