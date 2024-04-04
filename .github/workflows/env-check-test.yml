@@ -4,6 +4,4 @@ on: [push, workflow_dispatch]
 jobs:
   external-job:
     uses: Nordix/nsm-github/.github/workflows/env-check.yaml@arp-env-checker-test
-    with:
-      prefix: "NSM_"
 
